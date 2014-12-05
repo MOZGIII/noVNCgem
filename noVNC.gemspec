@@ -5,9 +5,9 @@ require "noVNC/version"
 Gem::Specification.new do |s|
   s.name        = "noVNC"
   s.version     = NoVNC::VERSION
-  s.authors     = ["DedaSys LLC"]
-  s.email       = ["davidw@dedasys.com"]
-  s.homepage    = "http://github.com/noVNCgem"
+  s.authors     = ["DedaSys LLC", "MOZGIII"]
+  s.email       = ["davidw@dedasys.com", "mike-n@narod.ru"]
+  s.homepage    = "https://github.com/davidw/noVNCgem"
   s.summary     = %q{noVNC for your Rails application}
   s.description = %q{VNC client using HTML5 (WebSockets, Canvas) with encryption (wss://) support.}
 
@@ -16,8 +16,8 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
-  # s.add_runtime_dependency "rest-client"
-  s.add_runtime_dependency "rails"
+  s.add_runtime_dependency "rails", ">= 3.0"
+
+  s.add_development_dependency "bundler", ">= 1.7"
+  s.add_development_dependency "rake", ">= 10.0"
 end
