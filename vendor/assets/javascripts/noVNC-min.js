@@ -3,7 +3,10 @@
 //= require noVNC/base64
 //= require noVNC/websock
 //= require noVNC/des
+//= require noVNC/keysymdef
+//= require noVNC/keyboard
 //= require noVNC/input
 //= require noVNC/display
-//= require noVNC/rfb
 //= require noVNC/jsunzip
+//= require noVNC/rfb
+//= require noVNC/keysym
