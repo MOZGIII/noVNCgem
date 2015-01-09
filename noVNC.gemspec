@@ -4,7 +4,7 @@ require "noVNC/version"
 
 Gem::Specification.new do |s|
   s.name        = "noVNC"
-  s.version     = NoVNC::VERSION
+  s.version     = NoVnc::VERSION
   s.authors     = ["DedaSys LLC", "MOZGIII"]
   s.email       = ["davidw@dedasys.com", "mike-n@narod.ru"]
   s.homepage    = "https://github.com/davidw/noVNCgem"
