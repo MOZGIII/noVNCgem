@@ -1,4 +1,4 @@
-require "bundler/gem_tasks"
+require 'bundler/gem_tasks'
 
 ROOT = File.dirname(__FILE__)
 
@@ -6,14 +6,14 @@ task :copy_files_from_git do
   srcdir = ARGV[1]
   unless srcdir
     STDERR.puts "Usage: rake #{ARGV[0]} [noVNC path]"
-    STDERR.puts "Pass cloned noVNC git repo path as an argument!"
-    exit -1
+    STDERR.puts 'Pass cloned noVNC git repo path as an argument!'
+    exit 2
   end
 
   srcdir = Pathname.new(srcdir)
-  if !File.exist?(srcdir + ".git")
+  unless File.exist?(srcdir + '.git')
     STDERR.puts "No .git directory in #{srcdir}"
-    exit -1
+    exit 2
   end
 
   Dir.glob(srcdir + 'include/*.js').each do |jsf|
@@ -50,4 +50,3 @@ task :remove_bundled_files do
     rm imgf
   end
 end
-
