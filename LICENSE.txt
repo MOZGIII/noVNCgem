@@ -1,7 +1,7 @@
 Copyright (c) 2012-2014 DedaSys LLC
-Copyright (c) 2014 MOZGIII
+Copyright (c) 2014-2015 MOZGIII
 
-noVNCgem: MIT License
+novnc-rails: MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -37,10 +37,10 @@ is not limited to):
     include/jsunzip.js
     include/keysym.js
     include/logo.js
+    include/playback.js
     include/rfb.js
     include/ui.js
     include/util.js
-    include/vnc.js
     include/websock.js
     include/webutil.js
 
@@ -71,7 +71,7 @@ the noVNC core library. Here is a list of those files and the original
 licenses (all MPL 2.0 compatible):
 
     include/base64.js          : MPL 2.0
-
+   
     include/des.js             : Various BSD style licenses
 
     include/jsunzip.js         : zlib/libpng license

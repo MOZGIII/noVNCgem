@@ -1,13 +1,13 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "noVNC/version"
+require "novnc-rails/version"
 
 Gem::Specification.new do |s|
-  s.name        = "noVNC"
-  s.version     = NoVnc::VERSION
+  s.name        = "novnc-rails"
+  s.version     = NoVNC::VERSION
   s.authors     = ["DedaSys LLC", "MOZGIII"]
   s.email       = ["davidw@dedasys.com", "mike-n@narod.ru"]
-  s.homepage    = "https://github.com/davidw/noVNCgem"
+  s.homepage    = "https://github.com/MOZGIII/novnc-rails"
   s.summary     = %q{noVNC for your Rails application}
   s.description = %q{VNC client using HTML5 (WebSockets, Canvas) with encryption (wss://) support.}
 

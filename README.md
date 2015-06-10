@@ -1,16 +1,12 @@
 # noVNC Rails gem
 
-This gem is an attempt to make noVNC easy to install in a Rails application.
-
-So far, it's fairly basic. There is a Rake task to import code from a
-checked out git directory to make it easier to import updates from the
-noVNC project.
+This gem packages noVNC for super easy usage in a Rails application.
 
 ## Installation
 
 Add this to your `Gemfile`:
 ```ruby
-gem 'noVNC', :git => "git://github.com/davidw/noVNCgem.git"
+gem 'novnc-rails', github: 'MOZGIII/novnc-rails'
 ```
 
 Enable minimal working set by adding the following to the `app/assets/javascripts/application.js`:
@@ -23,4 +19,16 @@ or load the whole suite:
 //= require noVNC-all
 ```
 
+## Credits
+
 The original noVNC is available here: http://kanaka.github.com/noVNC/
+
+This gem as originally developed by David N. Welton: https://github.com/davidw/noVNCgem
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Added some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
