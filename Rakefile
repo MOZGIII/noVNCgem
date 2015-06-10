@@ -21,7 +21,7 @@ task :copy_files_from_git do
   end
 
   Dir.glob(srcdir + 'include/*.css').each do |csf|
-    cp csf, "#{ROOT}/vendor/assets/stylesheets"
+    cp csf, "#{ROOT}/vendor/assets/stylesheets/noVNC"
   end
 
   Dir.glob(srcdir + 'include/*.{ttf,woff}').each do |ff|
@@ -38,7 +38,7 @@ task :remove_bundled_files do
     rm jsf
   end
 
-  Dir.glob("#{ROOT}/vendor/assets/stylesheets/*.css").each do |csf|
+  Dir.glob("#{ROOT}/vendor/assets/stylesheets/noVNC/*.css").each do |csf|
     rm csf
   end
 
